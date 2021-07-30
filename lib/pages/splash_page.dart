@@ -1,3 +1,4 @@
+import 'package:bwa_cozy/pages/home_page.dart';
 import 'package:bwa_cozy/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -68,7 +69,14 @@ class SplashPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => HomePage(),
+                          ),
+                        );
+                      },
                       child: Text(
                         'Explore Now',
                         style: whiteTextStyle.copyWith(

@@ -3,9 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 Color purpleColor = Color(0xff5843BE);
 Color whiteColor = Color(0xffFFFFFF);
+Color lightwhiteColor = Color(0xffF6F7F8);
 Color blackColor = Color(0xff000000);
 Color greyColor = Color(0xff82868E);
 Color orangeColor = Color(0xffFF9376);
+
+double edge = 24;
 
 TextStyle blackTextStyle = GoogleFonts.poppins(
   fontWeight: FontWeight.w500,
@@ -25,4 +28,9 @@ TextStyle greyextStyle = GoogleFonts.poppins(
 TextStyle purpleTextStyle = GoogleFonts.poppins(
   fontWeight: FontWeight.w500,
   color: purpleColor,
+);
+
+TextStyle regularTextStyle = GoogleFonts.poppins(
+  fontWeight: FontWeight.w400,
+  color: blackColor,
 );
