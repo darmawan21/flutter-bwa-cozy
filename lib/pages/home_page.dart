@@ -108,6 +108,37 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
+                    width: 20,
+                  ),
+                  CityCard(
+                    City(
+                      id: 4,
+                      name: 'Palembang',
+                      imageUrl: 'assets/images/city4.png',
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  CityCard(
+                    City(
+                      id: 5,
+                      name: 'Aceh',
+                      imageUrl: 'assets/images/city5.png',
+                      isPopular: true,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  CityCard(
+                    City(
+                      id: 6,
+                      name: 'Bogor',
+                      imageUrl: 'assets/images/city6.png',
+                    ),
+                  ),
+                  SizedBox(
                     width: 24,
                   ),
                 ],
@@ -136,7 +167,7 @@ class HomePage extends StatelessWidget {
               ),
               child: FutureBuilder(
                 future: spaceProvider.getRecommendedSpaces(),
-                builder: (context, AsyncSnapshot snapshot) {
+                builder: (BuildContext context, AsyncSnapshot snapshot) {
                   List<Space> data = snapshot.data;
 
                   int index = 0;
